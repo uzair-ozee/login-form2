@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main__div">
+        <h1>Login</h1>
+
+        <!-- close icon -->
+        <div class="close__icon">
+            <span>
+                <i class="fas fa-times" id="Close" onclick="closeFunction()"></i>
+            </span>
+        </div>
+        <!-- login user icon -->
+        <div class="email__icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Type your Email">
+        </div>
+
+        <br>
+        <!-- password icon -->
+        <div class="password__icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Type Your Password">
+        </div>
+
+        <span class="forgot_password"><a href="#">Forgot Password?</a></span>
+        <!-- Login btn -->
+        <br>
+        <button type="submit">Login</button>
+
+        <!-- icons -->
+        <br>
+        <span class="sign__up">or signup using</span>
+
+        <div class="signup__icons">
+            <a href="#">
+                <span id="facebook">
+                    <i class="fab fa-facebook"></i>
+                </span>
+                <span id="twitter">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span id="google">
+                    <i class="fab fa-google"></i>
+                </span>
+            </a>
+        </div>
+        <!-- sign up -->
+        <br>
+        <span class="signup">or signup using</span>
+        <a href="#" class="signup__a" onclick="showSignupForm(event)">Signup</a>
+    </div>
+
+    <!--========================================================== For signup ===========================================================-->
+
+    <div class="signup_form" style="display: none;">
+        <h1 id="signup__heading">Sign Up</h1>
+
+        <!-- close icon -->
+        <div class="close__icon">
+            <span>
+                <i class="fas fa-times" id="Signup__Close" onclick="signupCloseFunction()"></i>
+            </span>
+        </div>
+        <!-- login user icon -->
+        <div class="user__icon">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Type your Username">
+        </div>
+
+        <!-- login user icon -->
+        <div class="email__icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Type your Email">
+        </div>
+
+        <br>
+        <!-- password icon -->
+        <div class="password__icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Type Your Password">
+        </div>
+
+        <button type="submit" id="create__account">Create Account</button>
+
+        <span class="signup__span">Already have an account</span>
+        <a href="#" class="signin__a" onclick="showSigninForm(event)">Sign In</a>
+    </div>
+
+    <script src="./app.js">
+            
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: rgb(37, 21, 21); */
+}
+
+.main__div{
+    background-color: rgba(238, 229, 229, 0.5);
+    height: 28rem;
+    width: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0.3rem 0.3rem rgba(0,0,0,0.1); */
+    /* display: none; */
+}
+
+h1{
+    text-align: center;
+    padding: 3rem;
+}
+
+
+
+.close__icon span i{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+.email__icon input{
+    padding: 0.4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 0.3rem 0.3rem;
+}
+
+.email__icon{
+    position: relative;
+
+}
+
+.email__icon i{
+    position: absolute;
+    top: 27.8%;
+    left: 3%;
+    z-index: 1;
+    font-size: small;
+
+}
+
+.password__icon input{
+    padding: 0.4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 0.3rem 0.3rem;
+}
+
+.password__icon{
+    position: relative;
+
+}
+
+.password__icon i{
+    position: absolute;
+    top: 27.7%;
+    left: 3%;
+    z-index: 1;
+    font-size: small;
+}
+
+.user__icon input{
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 0.3rem 0.3rem;
+}
+
+.user__icon{
+    position: relative;
+
+}
+
+.user__icon i{
+    position: absolute;
+    top: 20.7%;
+    left: 3%;
+    z-index: 1;
+    font-size: small;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: rgb(172, 172, 172);
+    width: 100%;
+}
+
+.forgot_password a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    position: absolute;
+    right: 3.5rem;
+    top: 13rem;
+    font-size: small;
+    color: rgb(172,172,172);
+}
+
+button{
+    width: 60%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem;
+    /* background-image: linear-gradient(to left,rgb(179, 34, 34),rgb(45, 45, 182)); */
+    background-color: #373af0;
+}
+
+.sign__up,
+.signup{
+    /* display: flex;
+    justify-content: center; */
+    color: rgb(206, 195, 195);
+}
+
+.signup__icons a,
+.signup__a{
+    text-decoration: none;
+}
+
+.signup__icons{
+    display: flex;
+    /* gap: 6rem; */
+    padding: 0.6rem;
+}
+
+.signin__a,
+.signup__a{
+    padding: 0.3rem;
+    color: rgb(206, 195, 195);
+    text-decoration: underline;
+}
+
+#google,
+#facebook,
+#twitter{
+    color: rgb(1, 79, 196);
+}
+
+/* For Signup Form */
+
+.signup_form{
+    background-color: rgba(238, 229, 229, 0.5);
+    height: 28rem;
+    width: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    display: none;
+}
+
+#signup__heading{
+    color: black;
+}
+
+.signup__span{
+    padding: 1rem;
+}
